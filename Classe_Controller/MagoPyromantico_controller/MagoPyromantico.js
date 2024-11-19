@@ -9,8 +9,8 @@ export class MagoPyromantico extends Magos {
 
 	bolaFogo() {
 		console.log('O feitiço "Bola de Fogo" foi lançado');
-		if (this.caracteristicas.mana >= 15) this.caracteristicas.mana = this.caracteristicas.mana - 15;
-		else throw new Error('Voce nao tem forca apra isso');
+		// if (this.caracteristicas.mana >= 15) this.caracteristicas.mana = this.caracteristicas.mana - 15;
+		// else throw new Error('Voce nao tem forca apra isso');
 	}
 
 	lancaChamas() {
@@ -25,13 +25,14 @@ export class MagoPyromantico extends Magos {
 		console.log('ddddd');
 	}
 
-	recebeMagia() {
-		if (this.caracteristicas.vida <= this.caracteristcas.agressao) {
-			throw new Error('Game Over...sua vida acabou');
-		}
+	// 	recebeMagia() {
+	// 		if (this.caracteristicas.vida <= this.caracteristicas.agressao) {
+	// 			throw new Error('Game Over...sua vida acabou');
+	// 		}
 
-		if (this.caracteristcas.mana <= 0) {
-			throw new Error('Game Over...sua mana acabou');
-		}
-	}
+	// 		if (this.caracteristicas.mana <= 0) {
+	// 			throw new Error('Game Over...sua mana acabou');
+	// 		}
+	// 	}
+	//
 }

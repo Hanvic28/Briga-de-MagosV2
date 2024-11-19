@@ -1,5 +1,6 @@
 import { MagoPyromantico } from './Classe_Controller/MagoPyromantico_controller/MagoPyromantico.js';
 import { MagoEletrico } from './Classe_Controller/MagoEletrico_controller/MagoEletrico.js';
+import { Magos } from './Classe_Controller/Magos_controller/Magos.js';
 
 function jogo() {
 	const magoFogo = new MagoPyromantico('Zord', 345);
@@ -20,17 +21,16 @@ function jogo() {
 }
 
 function recebeMagia() {
-	if (this.caracteristicas.vida <= this.caracteristcas.agressao) {
+	if (this?.caracteristicas.vida <= this?.tiposAtaque.agressao) {
 		throw new Error('Game Over...sua vida acabou');
 	}
 
-	if (this.caracteristcas.mana <= 0) {
+	if (this?.caracteristcas.mana <= 0) {
 		throw new Error('Game Over...sua mana acabou');
 	}
 
-	this.caracteristcas.vida = this.caracteristicas.vida - magoFogo.tiposAtaque[0].agressao;
+	this.caracteristcas.vida = this.caracteristicas.vida - this.tiposAtaque[0].agressao;
 }
-
 jogo();
 //jogador 1: criar mago 1
 //bot: cria mago 2

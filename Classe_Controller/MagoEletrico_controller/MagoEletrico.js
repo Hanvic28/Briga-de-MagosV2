@@ -9,8 +9,8 @@ export class MagoEletrico extends Magos {
 
 	raios(dano = 30, custoMana = 30) {
 		console.log('O feitiço "Raios" foi lançado');
-		if (this.caracteristicas.mana >= 15) this.caracteristcas.mana = this.caracteristicas.mana - 30;
-		else throw new Error('Sua mana acabou');
+		// if (this.caracteristicas.mana >= 15) this.caracteristcas.mana = this.caracteristicas.mana - 30;
+		// else throw new Error('Sua mana acabou');
 	}
 
 	lightingDash(custoMana = 50) {

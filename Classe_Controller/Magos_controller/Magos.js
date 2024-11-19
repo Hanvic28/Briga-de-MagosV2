@@ -4,14 +4,14 @@ export class Magos {
 		this.caracteristicas = {
 			nome,
 			idade,
-			vida,
+			vida: 100,
 			mana,
 			rank,
 		};
 		//criar um ataque no constructor do mago de fogo e dar o valor de seus ataques
 	}
 
-	get caracteristcas() {
+	get caracteristicas() {
 		return this.caracteristicas;
 	}
 
